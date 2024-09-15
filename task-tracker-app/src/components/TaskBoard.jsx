@@ -51,7 +51,7 @@ const TaskBoard = () => {
 
   return (
     <div className="task-board-container">
-      <h1>Task Tracker</h1>
+      <h1 className="title">Task Tracker</h1>
       {!isEditing && (
         <>
           <input
@@ -59,11 +59,14 @@ const TaskBoard = () => {
             placeholder="Enter a task..."
             value={textInput}
             onChange={HandleInputChange}
+            className="task-input"
           />
-          <button onClick={HandleAddTaskButton}>Add task</button>
+          <button onClick={HandleAddTaskButton} className="add-task-button">
+            Add task
+          </button>
         </>
       )}
-      <ul>
+      <ul className="task-list">
         {tasks.map((task) => (
           <li key={task.id}>
             {task.text}

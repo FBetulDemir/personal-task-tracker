@@ -1,3 +1,93 @@
-body {
-  height: 100vh;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
+
+.task-board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.title {
+  color: rgb(73, 69, 69);
+  margin: 2em 0;
+  font-size: 28px;
+}
+
+.task-input,
+.edit-input {
+  padding: 1em 2em;
+  font-size: 16px;
+  border-radius: 20px;
+  width: 40%;
+  margin-bottom: 2em;
+  margin-right: 0.5em;
+  background-color: aliceblue;
+}
+
+.add-task-button {
+  padding: 1em 2em;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.task-list {
+  margin: 2em 3em;
+  padding: 2em;
+  width: 100%;
+  font-size: 22px;
+  color: rgb(73, 69, 69);
+  list-style: none;
+  border-top: 2px solid black;
+  text-align: center;
+}
+
+.task-list li {
+  margin: 2em 0;
+}
+
+.edit-button {
+  padding: 1em 2em;
+  background-color: rgb(100, 0, 128);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.update-task-button {
+  padding: 1em 2em;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.edit-task-container {
+  margin: 3em;
+}
+
+.cancel-button,
+.delete-button {
+  background-color: red;
+  padding: 1em 2em;
+  margin: 0 2em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
 }
